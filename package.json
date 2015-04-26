@@ -1,0 +1,11 @@
+{
+  "name": "npm-licenses",
+  "version": "0.0.0",
+  "scripts": {
+    "prebuild": "dat pull --skim",
+    "build": "mkdir build && node licenses.js | cut -f 2 | sort | uniq -c | sort -n | tac | head -n 100 > build/occurences-license.txt"
+  },
+  "dependencies": {
+    "dat": "6.9.7"
+  }
+}

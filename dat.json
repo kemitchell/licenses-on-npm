@@ -1,0 +1,6 @@
+{
+  "name": "some-dat",
+  "hooks": {
+    "listen": "dat-npm"
+  }
+}
